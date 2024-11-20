@@ -7,110 +7,119 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-          <!-- Navbar brand -->
-          <a class="navbar-brand" href="#"></a>
-      
-          <!-- Toggle button -->
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars text-light"></i>
-          </button>
-      
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left links -->
-            <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
-              <li class="nav-item text-center mx-2 mx-lg-1">
-                <a class="nav-link active" aria-current="page" href="#!">
-                  <div>
-                    <i class="fas fa-home fa-lg mb-1"></i>
-                  </div>
-                  Home
-                </a>
-              </li>
-              <li class="nav-item text-center mx-2 mx-lg-1">
-                <a class="nav-link" href="#!">
-                  <div>
-                    <i class="far fa-envelope fa-lg mb-1"></i>
-                    <span class="badge rounded-pill badge-notification bg-danger">11</span>
-                  </div>
-                  Link
-                </a>
-              </li>
-              <li class="nav-item text-center mx-2 mx-lg-1">
-                <a class="nav-link disabled" aria-disabled="true" href="#!">
-                  <div>
-                    <i class="far fa-envelope fa-lg mb-1"></i>
-                    <span class="badge rounded-pill badge-notification bg-warning">11</span>
-                  </div>
-                  Disabled
-                </a>
-              </li>
-              <li class="nav-item dropdown text-center mx-2 mx-lg-1">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
-                  aria-expanded="false">
-                  <div>
-                    <i class="far fa-envelope fa-lg mb-1"></i>
-                    <span class="badge rounded-pill badge-notification bg-primary">11</span>
-                  </div>
-                  Dropdown
-                </a>
-                <!-- Dropdown menu -->
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <!-- Left links -->
-      
-            <!-- Right links -->
-            <ul class="navbar-nav ms-auto d-flex flex-row mt-3 mt-lg-0">
-              <li class="nav-item text-center mx-2 mx-lg-1">
-                <a class="nav-link" href="#!">
-                  <div>
-                    <i class="fas fa-bell fa-lg mb-1"></i>
-                    <span class="badge rounded-pill badge-notification bg-info">11</span>
-                  </div>
-                  Messages
-                </a>
-              </li>
-              <li class="nav-item text-center mx-2 mx-lg-1">
-                <a class="nav-link" href="#!">
-                  <div>
-                    <i class="fas fa-globe-americas fa-lg mb-1"></i>
-                    <span class="badge rounded-pill badge-notification bg-success">11</span>
-                  </div>
-                  News
-                </a>
-              </li>
-            </ul>
-            <!-- Right links -->
-      
-            <!-- Search form -->
-            <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
-              <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
-                Search
-              </button>
-            </form>
-          </div>
-          <!-- Collapsible wrapper -->
+<body class="container">
+    <header>
+        <header>
+            <!-- Jumbotron -->
+  <div class="p-1 text-center bg-white border-bottom">
+    <div class="container">
+      <div class="row">
+        <!-- Left elements -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+          <a href="#!" class="ms-md-1">
+            <img src="hd_restoration_result_image (1).png" height="80" width="100" />
+          </a>
         </div>
-        <!-- Container wrapper -->
-      </nav>
-      <!-- Navbar -->
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <div class="col-md-4">
+          <form class="d-flex input-group w-auto my-auto mb-3 mb-md-0">
+            <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search" />
+            <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+          </form>
+        </div>
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+          <div class="d-flex">
+            <!-- Cart -->
+            <a class="text-reset me-3" href="#">
+                
+              <span><i class="fas fa-shopping-cart">Categories</i></span>
+              <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+
+            <!-- Notification -->
+            <div class="dropdown">
+              <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bell">shop</i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Some news</a></li>
+                <li><a class="dropdown-item" href="#">Another news</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+
+            
+
+            <!-- User -->
+            <div class="dropdown">
+              <a class="text-reset dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="hd_restoration_result_image.png" class="rounded-circle" height="22"
+                  alt="" loading="lazy" />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">My profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Right elements -->
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- Container wrapper -->
+    <div class="container justify-content-center justify-content-md-between">
+      <!-- Left links -->
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item me-2 me-lg-0">
+          <a class="nav-link" href="#" role="button" data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1"
+            class="btn shadow-0 p-0 me-3" aria-controls="#sidenav-1" aria-haspopup="true">
+            <i class="fas fa-bars me-1"></i>
+            <span>Categories</span>
+          </a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Bestsellers</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Inspirations</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <button class="btn btn-outline-primary" data-mdb-ripple-color="dark" type="button">
+        Download app<i class="fas fa-download ms-2"></i>
+      </button>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+  
+
+ 
+        
+      </header> 
 
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
