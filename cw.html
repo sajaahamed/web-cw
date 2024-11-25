@@ -39,6 +39,51 @@
         justify-content: space-between;
       }
     </style>
+    <style>
+      #carouselExampleAutoplaying {
+        height: 500px; /* Fixed height for the carousel */
+        overflow: hidden; /* Prevent content spill */
+        position: relative; /* To allow positioning of overlay text */
+      }
+    
+      #carouselExampleAutoplaying .carousel-inner {
+        height: 100%; /* Ensure inner height matches the carousel */
+      }
+    
+      #carouselExampleAutoplaying .carousel-item img {
+        height: 100%; /* Scale image to fit height */
+        object-fit: cover; /* Maintain aspect ratio */
+        width: 100%;
+      }
+    
+      .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+      }
+    
+      .carousel-caption h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+    
+      .carousel-caption p {
+        font-size: 1.2rem;
+      }
+    
+      /* Optional: Center controls vertically */
+      .carousel-control-prev, 
+      .carousel-control-next {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
 
 </head>
 <body class="container-fluid"btn-outline-primary>
@@ -125,10 +170,10 @@
               Categories
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="cw.html">Mens styles</a></li>
-              <li><a class="dropdown-item" href="women.html">Women styles</a></li>
-              <li><a class="dropdown-item" href="#">Child styles</a></li>
-              <li><a class="dropdown-item" href="#">Other accessories</a></li>
+              <li><a class="dropdown-item" href="cata_slct.html">Home</a></li>
+                  <li><a class="dropdown-item" href="cw.html">Men's </a></li>
+                  <li><a class="dropdown-item" href="women.html">Women's </a></li>
+                  <li><a class="dropdown-item" href="kids.html">Kid's </a></li>
             </ul>
           </li>
           </li>
@@ -167,16 +212,16 @@
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner rounded-4" >
           <div class="carousel-item active  align-items-center " >
-            <img src="domino-studio-164_6wVEHfI-unsplash.jpg " class="d-block w-100" alt="..."style="height: 500px">
+            <img src="pexels-craytive-1456706.jpg" class="d-block w-100" alt="..."style="height: 500px">
           </div>
           <div class="carousel-item align-items-center">
-            <img src="felipepelaquim-6zO5VKogoZE-unsplash.jpg" class="d-block w-100" alt="..."style="height: 500px">
+            <img src="pexels-mstudio-360817-1307128.jpg" class="d-block w-100" alt="..."style="height: 500px">
           </div>
           <div class="carousel-item align-items-center" >
-            <img src="jayson-hinrichsen-qLs4WYXqLNY-unsplash.jpg" class="d-block w-100" alt="..."style="height: 500px">
+            <img src="pexels-pixabay-267320.jpg" class="d-block w-100" alt="..."style="height: 500px">
           </div>
           <div class="carousel-item align-items-center" >
-            <img src="malvestida-DMl5gG0yWWY-unsplash.jpg" class="d-block w-100 d-flex" alt="..."style="height: 500px">
+            <img src="pexels-pluyar-786003.jpg" class="d-block w-100 d-flex" alt="..."style="height: 500px">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
