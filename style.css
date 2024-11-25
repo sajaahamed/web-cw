@@ -33,9 +33,21 @@ body{
     z-index: 100;
 }
 .nav-logo p{
+    min-width: fit-content;
+    margin-inline-start: 320px;
     color: white;
     font-size: 25px;
     font-weight: 600;
+    align-items: left;
+    
+}
+.navb-logo{
+    margin-inline-start: 20px;
+    width: 10%;
+    position: absalute;
+    display: inline-block;
+    
+
 }
 .nav-button .btn{
     width: 100px;
