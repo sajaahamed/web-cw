@@ -250,7 +250,7 @@
                 <div class="card-body">
                   <h5 class="card-title">NIKE RUNNING SHOE</h5>
                   <p class="card-text">Rs.5500/=</p>
-                  <!-- Button trigger modal -->
+           <!-- Button trigger modal -->
                   <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">Add to cart</button>
 
                   <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
@@ -261,10 +261,22 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          Nike Running Shoe has been added to your cart.
+                          <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                            <img src="ki-1.webp" class="img-fluid"/>
+                            <a href="#!">
+                              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+
+                            <div>
+                              <button type="button" class="btn btn-dark btn-sm" data-bs-dismiss="modal" carouselExampleAutoplaying ></button>
+                            </div>
+                          </div>
+
+                          
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button id="add" type="button" class="btn btn-dark" data-bs-dismiss="modal">Add</button>
+                          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>                          
                         </div>
                       </div>
                     </div>
