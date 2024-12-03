@@ -83,6 +83,37 @@
         transform: translateY(-50%);
       }
     </style>
+    <style>
+      .btn-dark {
+        border-radius: 0.25rem;
+      }
+    
+      .modal-content {
+        border-radius: 0.5rem;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+    
+      .modal-header img {
+        border: 1px solid #ddd;
+        padding: 4px;
+        background-color: #f9f9f9;
+      }
+    
+      .modal-title {
+        font-weight: bold;
+      }
+    
+      .btn-sm {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+      }
+    
+      #quantity {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    </style>
  
 </head>
 
@@ -250,22 +281,98 @@
                 <div class="card-body">
                   <h5 class="card-title">NIKE RUNNING SHOE</h5>
                   <p class="card-text">Rs.5500/=</p>
-                  <a href="#!" class="btn btn-dark" data-mdb-ripple-init>Add to cart</a>
-                </div>
-              </div>
-            </div>
-            <div  class="d-md-inline-block" style="width: 15%; height: 60px;">
-              <div class="card">
-                <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">
+                   Add to Cart
+                  </button>
+          
+                   <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <div class="d-flex align-items-center">
+                    <img src="ki-1.webp" class="img-fluid rounded me-3" style="width: 80px; height: 80px;" alt="Product Image" />
+                    <h5 class="modal-title" id="modal1Label">Product Added to Cart</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+          
+                  <!-- Modal Body -->
+                  <div class="modal-body text-center">
+                  <p class="mb-4">Adjust the quantity of the product:</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <button id="decrease" class="btn btn-dark btn-sm me-2" onclick="updateQuantity(-1)">-</button>
+                    <input type="text" id="quantity" class="form-control text-center" value="1" style="width: 50px;" readonly />
+                    <button id="increase" class="btn btn-dark btn-sm ms-2" onclick="updateQuantity(1)">+</button>
+                    </div>
+                    </div>
+          
+                    <!-- Modal Footer -->
+                  <div class="modal-footer">
+                  <button id="add" type="button" class="btn btn-dark" data-bs-dismiss="modal">Add</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 </div>
+                  </div>
+                  </div>
+                    </div>
+          
+                  
+                  </div>
+                  </div>
+                  </div>
+                  <div  class="d-md-inline-block" style="width: 15%; height: 60px;">
+                  <div class="card">
+                  <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
                   <img src="ki-2.webp" class="img-fluid"/>
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
+
+                
                 <div class="card-body">
                   <h5 class="card-title">NIKE RUNNINNG SHOE</h5>
                   <p class="card-text">Rs.5500/=</p>
-                  <a href="#!" class="btn btn-dark" data-mdb-ripple-init>Add to cart</a>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">
+                    Add to Cart
+                   </button>
+           
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered">
+                     <div class="modal-content">
+                     <!-- Modal Header -->
+                     <div class="modal-header">
+                     <div class="d-flex align-items-center">
+                     <img src="ki-1.webp" class="img-fluid rounded me-3" style="width: 80px; height: 80px;" alt="Product Image" />
+                     <h5 class="modal-title" id="modal1Label">Product Added to Cart</h5>
+                     </div>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+           
+                   <!-- Modal Body -->
+                   <div class="modal-body text-center">
+                   <p class="mb-4">Adjust the quantity of the product:</p>
+                   <div class="d-flex justify-content-center align-items-center">
+                     <button id="decrease" class="btn btn-dark btn-sm me-2" onclick="updateQuantity(-1)">-</button>
+                     <input type="text" id="quantity" class="form-control text-center" value="1" style="width: 50px;" readonly />
+                     <button id="increase" class="btn btn-dark btn-sm ms-2" onclick="updateQuantity(1)">+</button>
+                     </div>
+                     </div>
+           
+                     <!-- Modal Footer -->
+                   <div class="modal-footer">
+                   <button id="add" type="button" class="btn btn-dark" data-bs-dismiss="modal">Add</button>
+                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                   </div>
+                   </div>
+                     </div>
+           
+                   
+                   </div>
+                   </div>
+                   </div>
                 </div>
               </div>
             </div>
@@ -470,6 +577,16 @@
             </div>
             <!-- Copyright -->
           </footer>
+
+          <script>
+            function updateQuantity(change) {
+              const quantityInput = document.getElementById('quantity');
+              let currentQuantity = parseInt(quantityInput.value, 10);
+              currentQuantity = isNaN(currentQuantity) ? 1 : currentQuantity;
+              const updatedQuantity = Math.max(1, currentQuantity + change);
+              quantityInput.value = updatedQuantity;
+            }
+          </script>
     
           <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
